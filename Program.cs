@@ -20,13 +20,8 @@ using SmallConsoleJRPG;
  *  Hardcode abändern, viel von den Chars iterieren
  *  
  *  
- *  ToDo: Combat Lsite mit Namen der Gegner ausbessern -> nutzen der Objekt List der Gegner.
- *         
- *          
- *
- * Wird super alles in Klassen umzuschreiben, vll bin ich ja masochist :')
- * 
- * 
+ *  ToDo: Combat Liste mit Namen der Gegner ausbessern -> nutzen der Objekt List der Gegner.
+ *  Mehr in Klassen umschreiben, allgemein auf neueren Stand bringen.
  * 
  */
 

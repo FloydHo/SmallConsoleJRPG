@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmallConsoleJRPG
 {
+
+    //Sollte nochmal in seperate Files ausgelagert werden und PC Animationen gehören auch hier hin
+
     public abstract class Animations
     {
         public string[] idle { get; set; }

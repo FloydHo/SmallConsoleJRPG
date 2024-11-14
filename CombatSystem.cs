@@ -320,7 +320,7 @@ namespace SmallConsoleJRPG
         public void CombatStart(List<Enemy> eGroup)
         {
             addEnemies(eGroup);
-            if (!alreadyInit)
+            if (!alreadyInit) //Inventory soll nur einmal Initailiser werden da sonst Items verdoppelt werden.
             {
                 SetupInventories();
                 alreadyInit = true;
@@ -1240,9 +1240,9 @@ namespace SmallConsoleJRPG
             Character pc = characters.FirstOrDefault(e => e.name == attacker);
             string[][] animMove;
             string[][] animAttack;
-            switch (pc.weaponType)
+            switch (pc.weaponType) //Hier evt Enums
             {
-                case "Sword":
+                case "Sword": 
                     animMove = SP_playerMoveSword;
                     animAttack = SP_playerMeleeAttackSword;
                     break;
@@ -1501,7 +1501,7 @@ namespace SmallConsoleJRPG
 
         void ClearInputBuffer()
         {
-            // Leert den Eingabepuffer der Konsole
+            // Leert den Eingabepuffer der Konsole, damit Tastenschläge nicht beim returnen ins Menü nachträglich ausgfeührt werden.
             while (Console.KeyAvailable)
             {
                 Console.ReadKey(true); // Liest und verwirft die Tasteneingaben

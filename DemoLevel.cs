@@ -53,6 +53,7 @@ namespace SmallConsoleJRPG
 
         private void DrawFrame()
         {
+            //Der Rahmen von dem Spielfeld, weiß gerade nicht mehr warum ich den hier haben wollte.
             Console.SetCursorPosition(0, 0);
             Console.WriteLine("┌────────────────────────────────────────────────────────────────────────────────────────┐");
             for (int i = 0; i < 31; i++)
@@ -98,6 +99,7 @@ namespace SmallConsoleJRPG
 
         }
 
+        // Gegner Gruppen die in dem Level auftauchen könnten.
         List<Enemy> CreateEnemyGroup()
         {
             List<Enemy> eGroup = new List<Enemy>
@@ -174,6 +176,7 @@ namespace SmallConsoleJRPG
             Console.ForegroundColor = ConsoleColor.White;
         }
 
+        //Kleiner Kreis der Fackelreichweite simuliert
         private void DrawCircle(int h, int k, int r)
         {
             for (int y = -r; y <= r; y++)
@@ -218,8 +221,5 @@ namespace SmallConsoleJRPG
                     break;
             }
         }
-
-
-
     }
 }
