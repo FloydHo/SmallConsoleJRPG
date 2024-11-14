@@ -4,7 +4,7 @@ Kleines Projekt das ich zu Beginn im Kurs zu den C# Grundalgen geschrieben habe.
 Da es so früh war, ist wenig Struktur vorhanden und Best Practice erst recht nicht, 
 aber es ist etwas auf das ich trotzdem stolz bin :)
 
-Gerade so besseres Planen mit Klassen und welche erben sollten habe ich hier gelernt,
+Gerade so besseres planen mit Klassen und welche erben sollten habe ich hier gelernt,
 da z.B Enemys die selbe ParentKlasse haben sollten wie die (Player)Charactere was mir vieles beim schreiben als auch in der Zukunft
 hätte vereinfacht.
 
